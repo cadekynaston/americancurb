@@ -46,7 +46,7 @@ export default function Home() {
 
       </Hero>
       <Section>
-        <p>What in the ass!</p>
+        <p>Hello world</p>
       </Section>
     </Layout>
   );
