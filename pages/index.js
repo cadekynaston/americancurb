@@ -41,6 +41,7 @@ export default function Home() {
               objectFit="cover"
               objectPosition="center center"
               quality={70}
+              loading="eager"
             />
           </div>
         </div>
