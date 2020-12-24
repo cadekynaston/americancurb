@@ -3,49 +3,79 @@
 import { Styled, jsx } from 'theme-ui';
 import Image from 'next/image';
 
-import Hero from '../src/components/Hero';
 import Section from '../src/components/Section';
 import Layout from '../src/components/Layout';
-import Columns from '../src/components/Columns';
-import Column from '../src/components/Columns/Column';
+import Separator from '../src/components/Separator';
+import QuoteCarousel from '../src/components/QuoteCarousel';
 
 export default function Home() {
   return (
     <Layout>
-      <Hero>
-        {/* <Columns>
-          <Column width="40%"> */}
-        <div sx={{ py: 6 }}>
-
-          <Styled.h1 sx={{ textAlign: 'center', fontSize: 8, fontWeight: 'heading' }}>American Curb</Styled.h1>
-          <Styled.h4 sx={{ textAlign: 'center' }}>Landscape Curbing professionals serving Utah since 1999.</Styled.h4>
-        </div>
-        {/* </Column>
-          <Column width="60%">
-            <div sx={{
-              position: 'relative',
-              height: '100%',
-              width: '100%',
-              p: 3,
-              '> div': { borderRadius: 20 },
+      <Section spacing={0}>
+        <div sx={{ position: 'relative' }}>
+          <div sx={{
+            textAlign: 'right', pt: 7, pb: 6, width: '45%',
+          }}
+          >
+            <Styled.h1>
+              AMERICAN
+              <br />
+              CURB
+            </Styled.h1>
+            <Styled.p sx={{ letterSpacing: 3, color: 'rgba(34,34,34, .75)' }}>Landscape Curbing Professionals</Styled.p>
+          </div>
+          <div
+            sx={{
+              position: 'absolute',
+              top: 0,
+              right: -50,
+              width: '60%',
             }}
-            >
-              <Image
-                alt="Mountains"
-                src="/yard.png"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center center"
-                quality={70}
-                loading="eager"
-                priority
-              />
-            </div>
-          </Column>
-        </Columns> */}
+          >
+            <Image
+              alt="Mountains"
+              src="/hero-image-trimmy.png"
+              layout="responsive"
+              height={751}
+              width={740}
+              objectFit="cover"
+              objectPosition="center center"
+              quality={70}
+            />
+          </div>
+        </div>
+      </Section>
 
-      </Hero>
-      <Section>
+      <Section bgColor="muted">
+
+        <div sx={{
+          pt: 7,
+          pb: 5,
+          maxWidth: 800,
+          textAlign: 'center',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        }}
+        >
+
+          <Styled.h2>
+            Serving Utah for Over 25 Years
+          </Styled.h2>
+          <Styled.p>American Curb is Utah’s premier landscape curbing business. We pride ourselves on providing the greatest quality product at an affordable price.</Styled.p>
+          <Separator
+            styles={{
+              mt: 4,
+              mb: 4,
+              ml: 'auto',
+              mr: 'auto',
+            }}
+          />
+
+          <QuoteCarousel />
+
+        </div>
+      </Section>
+      <Section spacing={5}>
         <p>Hello world</p>
       </Section>
     </Layout>

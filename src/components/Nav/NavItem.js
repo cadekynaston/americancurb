@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 const NavItem = ({ children, to }) => (
-  <li sx={{ mr: 4, fontSize: 3 }}>
+  <li sx={{ mr: 4, fontSize: 1 }}>
     <Link passHref href={to}>
       <a sx={{ textDecoration: 'none', color: 'text' }}>
         {children}

@@ -1,52 +1,79 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
+import { jsx, Styled } from 'theme-ui';
 // import PropTypes from 'prop-types';
 
 import NavItem from './NavItem';
 
-import Button from '../Button';
-import Logo from '../../images/logo2';
+import Logo from '../../images/logo';
 
 const Nav = () => (
-
   <div sx={{
-    display: 'flex', width: '100%', height: 75, py: 2, justifyContent: 'center', position: 'fixed', top: 0, zIndex: 10,
+    display: 'flex',
+    width: '100%',
+    height: 70,
+    justifyContent: 'center',
+    position: 'absolute',
+    top: 20,
+    zIndex: 10,
+    backgroundColor: 'background',
   }}
   >
     <div sx={{
       display: 'flex',
       width: '100%',
-      px: [2, 3],
-      maxWidth: (theme) => theme.custom.maxWidth,
+      px: [0],
+      maxWidth: (theme) => theme.maxWidth,
       justifyContent: 'space-between',
       alignItems: 'center',
+      boxShadow: '0 3px 8px rgba(0,0,0,.24)',
+      borderRadius: 0,
     }}
     >
-      <Logo sx={{ height: 65 }} />
-      <div sx={{
-        display: 'flex', flexDirection: 'row', height: 100, alignItems: 'center',
-      }}
+      <Logo sx={{ height: 62, ml: 3 }} />
+      <div
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          height: '100%',
+        }}
       >
 
         <ul sx={{
           display: 'flex', flexDirection: 'row', listStyleType: 'none', my: 0, pl: 0,
         }}
         >
-          <NavItem to="/">Home</NavItem>
-          <NavItem to="/about">Services</NavItem>
+          <NavItem to="/">Our Options</NavItem>
+          <NavItem to="/about">Gallery</NavItem>
           <NavItem to="/contact">Contact</NavItem>
         </ul>
-        <Button sx={{ ml: 3 }}>
-          <a
+        <button
+          type="button"
+          sx={{
+            borderTopRightRadius: 0,
+            borderBottomRightRadius: 0,
+            height: '100%',
+            border: 0,
+            backgroundColor: 'primary',
+            px: 4,
+          }}
+        >
+          <Styled.a
             href="tel:8014449944"
             sx={{
-              textDecoration: 'none', fontSize: 3, fontWeight: 'thin', color: 'text',
+              textDecoration: 'none',
+              fontSize: 18,
+              color: 'background',
+              height: '100%',
+              borderTopLeftRadius: 0,
+              borderBottomLeftRadius: 0,
+              letterSpacing: 1,
             }}
           >
-            801-444-9944
-          </a>
-        </Button>
+            801.444.9944
+          </Styled.a>
+        </button>
       </div>
     </div>
   </div>

@@ -3,15 +3,15 @@
 import { jsx } from 'theme-ui';
 import PropTypes from 'prop-types';
 
-const Hero = ({ children }) => (
+const Button = ({ children }) => (
   <button
     type="button"
     sx={{
       border: 0,
       py: 2,
       px: 4,
-      backgroundColor: 'accent',
-      borderRadius: 30,
+      backgroundColor: 'primary',
+      borderRadius: [0],
       fontSize: 3,
     }}
   >
@@ -19,13 +19,13 @@ const Hero = ({ children }) => (
   </button>
 );
 
-Hero.defaultProps = {
+Button.defaultProps = {
 
 };
 
-Hero.propTypes = {
+Button.propTypes = {
   children: PropTypes.node.isRequired,
 
 };
 
-export default Hero;
+export default Button;
