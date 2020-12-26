@@ -21,6 +21,6 @@ module.exports = {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/react-in-jsx-scope': 'off',
     'react/jsx-pascal-case': [0],
-    'max-len': [1],
+    'max-len': [0],
   },
 };

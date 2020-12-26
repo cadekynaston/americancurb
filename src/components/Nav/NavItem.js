@@ -6,9 +6,19 @@ import PropTypes from 'prop-types';
 import Link from '../Link';
 
 const NavItem = ({ children, to }) => (
-  <li sx={{ mr: 4, fontSize: 1 }}>
+  <li sx={{
+    mr: [0, 4], mt: [4, 0], fontSize: [3, 1],
+  }}
+  >
     <Link to={to}>
-      <a sx={{ textDecoration: 'none', color: 'text' }}>
+      <a sx={{
+        textDecoration: 'none',
+        color: 'text',
+        ':hover': {
+          color: 'primary',
+        },
+      }}
+      >
         {children}
       </a>
     </Link>

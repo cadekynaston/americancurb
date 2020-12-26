@@ -8,7 +8,10 @@ import Link from 'next/link';
 const CustomLink = ({ children, to, styles }) => (
   <Link passHref href={to}>
     <a sx={{
-      textDecoration: 'none', color: 'text', cursor: 'pointer', ...styles,
+      textDecoration: 'none',
+      color: 'text',
+      cursor: 'pointer',
+      ...styles,
     }}
     >
       {children}

@@ -6,6 +6,7 @@ import { useState } from 'react';
 import NavItem from './NavItem';
 import Link from '../Link';
 import MobileMenu from './MobileMenu';
+import Button from '../Button';
 
 import Logo from '../../images/logo';
 import PhoneIcon from '../../images/Phone';
@@ -63,9 +64,24 @@ const Nav = () => {
           </button>
           {isOpen && (
           <MobileMenu onClose={() => setIsOpen(false)}>
-            <NavItem to="/options">Our Options</NavItem>
-            <NavItem to="/about">Gallery</NavItem>
-            <NavItem to="/contact">Contact</NavItem>
+            <ul sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              listStyleType: 'none',
+              my: 0,
+              pl: 0,
+              mb: 4,
+
+            }}
+            >
+              <NavItem to="/">Home</NavItem>
+              <NavItem to="/options">Our Options</NavItem>
+              <NavItem to="/about">Gallery</NavItem>
+              <NavItem to="/contact">Contact</NavItem>
+            </ul>
+            <Link to="/options">
+              <Button>801.444.9944</Button>
+            </Link>
           </MobileMenu>
           )}
           <ul sx={{
@@ -93,7 +109,7 @@ const Nav = () => {
                 border: 0,
                 backgroundColor: 'primary',
                 color: 'background',
-                px: [3, 4],
+                px: ['25px', 4],
                 fontSize: 1,
                 letterSpacing: 1,
                 fontFamily: 'heading',

@@ -12,8 +12,9 @@ const MobileMenu = ({ children, onClose }) => (
     <div
       onClick={onClose}
       sx={{
-        position: 'absolute',
-        top: -20,
+        display: ['block', 'none'],
+        position: 'fixed',
+        top: 0,
         left: 0,
         height: '100vh',
         width: '100vw',
@@ -22,17 +23,24 @@ const MobileMenu = ({ children, onClose }) => (
     />
     <div sx={{
       position: 'absolute',
-      right: 20,
-      top: 0,
-      backgroundColor: 'muted',
+      display: ['block', 'none'],
+      right: 10,
+      top: -10,
+      backgroundColor: 'background',
       borderRadius: 0,
       p: 4,
+      px: 5,
+      textAlign: 'center',
       boxShadow: (theme) => theme.boxShadow,
     }}
     >
       <Close
         sx={{
-          position: 'absolute', top: 20, right: 20, opacity: 0.7,
+          position: 'absolute',
+          top: 20,
+          right: 20,
+          opacity: 0.8,
+          cursor: 'pointer',
         }}
         onClick={onClose}
       />
