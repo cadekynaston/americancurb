@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Styled } from 'theme-ui';
+import { jsx } from 'theme-ui';
 import { useState } from 'react';
 
 import NavItem from './NavItem';
@@ -18,7 +18,7 @@ const Nav = () => {
     <div sx={{
       display: 'flex',
       width: '100%',
-      height: 70,
+      height: [55, 70],
       justifyContent: 'center',
       position: 'absolute',
       top: 20,
@@ -38,7 +38,7 @@ const Nav = () => {
         borderRadius: 0,
       }}
       >
-        <Logo sx={{ height: 55, ml: 3 }} />
+        <Logo sx={{ height: [40, 55], ml: 3 }} />
         <div
           sx={{
             display: 'flex',
@@ -50,10 +50,10 @@ const Nav = () => {
 
           <button
             type="button"
-            onClick={() => { setIsOpen(true); }}
+            onClick={() => setIsOpen(true)}
             sx={{
               display: ['block', 'none'],
-              mr: 3,
+              mr: [2, 3],
               cursor: 'pointer',
               border: 0,
               backgroundColor: 'background',
@@ -93,7 +93,7 @@ const Nav = () => {
                 border: 0,
                 backgroundColor: 'primary',
                 color: 'background',
-                px: 4,
+                px: [3, 4],
                 fontSize: 1,
                 letterSpacing: 1,
                 fontFamily: 'heading',
@@ -101,7 +101,7 @@ const Nav = () => {
                 cursor: 'pointer',
               }}
             >
-              <PhoneIcon sx={{ display: ['block', 'none'], h: 25, w: 25 }} />
+              <PhoneIcon sx={{ display: ['block', 'none'], height: 27, width: 22 }} />
               <span sx={{ display: ['none', 'block'] }}>801.444.9944</span>
             </button>
           </Link>
