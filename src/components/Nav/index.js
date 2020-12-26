@@ -1,84 +1,116 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui';
-// import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 import NavItem from './NavItem';
+import Link from '../Link';
+import MobileMenu from './MobileMenu';
 
 import Logo from '../../images/logo';
+import PhoneIcon from '../../images/Phone';
+import MenuIcon from '../../images/Menu';
 
-const Nav = () => (
-  <div sx={{
-    display: 'flex',
-    width: '100%',
-    height: 70,
-    justifyContent: 'center',
-    position: 'absolute',
-    top: 20,
-    zIndex: 10,
-    backgroundColor: 'background',
-  }}
-  >
+const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
     <div sx={{
       display: 'flex',
       width: '100%',
-      px: [0],
-      maxWidth: (theme) => theme.maxWidth,
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      boxShadow: '0 3px 8px rgba(0,0,0,.24)',
-      borderRadius: 0,
+      height: 70,
+      justifyContent: 'center',
+      position: 'absolute',
+      top: 20,
+      zIndex: 10,
+      px: 10,
+      backgroundColor: 'background',
     }}
     >
-      <Logo sx={{ height: 62, ml: 3 }} />
-      <div
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          height: '100%',
-        }}
+      <div sx={{
+        display: 'flex',
+        width: '100%',
+        px: [0],
+        maxWidth: (theme) => theme.maxWidth,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        boxShadow: (theme) => theme.boxShadow,
+        borderRadius: 0,
+      }}
       >
-
-        <ul sx={{
-          display: 'flex', flexDirection: 'row', listStyleType: 'none', my: 0, pl: 0,
-        }}
-        >
-          <NavItem to="/">Our Options</NavItem>
-          <NavItem to="/about">Gallery</NavItem>
-          <NavItem to="/contact">Contact</NavItem>
-        </ul>
-        <button
-          type="button"
+        <Logo sx={{ height: 55, ml: 3 }} />
+        <div
           sx={{
-            borderTopRightRadius: 0,
-            borderBottomRightRadius: 0,
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
             height: '100%',
-            border: 0,
-            backgroundColor: 'primary',
-            px: 4,
           }}
         >
-          <Styled.a
-            href="tel:8014449944"
+
+          <button
+            type="button"
+            onClick={() => { setIsOpen(true); }}
             sx={{
-              textDecoration: 'none',
-              fontSize: 18,
-              color: 'background',
-              height: '100%',
-              borderTopLeftRadius: 0,
-              borderBottomLeftRadius: 0,
-              letterSpacing: 1,
+              display: ['block', 'none'],
+              mr: 3,
+              cursor: 'pointer',
+              border: 0,
+              backgroundColor: 'background',
             }}
           >
-            801.444.9944
-          </Styled.a>
-        </button>
+            <MenuIcon sx={{ mt: 1 }} />
+          </button>
+          {isOpen && (
+          <MobileMenu onClose={() => setIsOpen(false)}>
+            <NavItem to="/options">Our Options</NavItem>
+            <NavItem to="/about">Gallery</NavItem>
+            <NavItem to="/contact">Contact</NavItem>
+          </MobileMenu>
+          )}
+          <ul sx={{
+            display: ['none', 'flex'],
+            flexDirection: 'row',
+            listStyleType: 'none',
+            my: 0,
+            pl: 0,
+          }}
+          >
+            <NavItem to="/options">Our Options</NavItem>
+            <NavItem to="/about">Gallery</NavItem>
+            <NavItem to="/contact">Contact</NavItem>
+          </ul>
+          <Link
+            to="tel:8014449944"
+            styles={{ height: '100%' }}
+          >
+            <button
+              type="button"
+              sx={{
+                borderTopRightRadius: 0,
+                borderBottomRightRadius: 0,
+                height: '100%',
+                border: 0,
+                backgroundColor: 'primary',
+                color: 'background',
+                px: 4,
+                fontSize: 1,
+                letterSpacing: 1,
+                fontFamily: 'heading',
+                fontWeight: 700,
+                cursor: 'pointer',
+              }}
+            >
+              <PhoneIcon sx={{ display: ['block', 'none'], h: 25, w: 25 }} />
+              <span sx={{ display: ['none', 'block'] }}>801.444.9944</span>
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
-  </div>
 
-);
+  );
+};
 
 Nav.propTypes = {
 };

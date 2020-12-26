@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui';
 import { useState } from 'react';
-import PropTypes from 'prop-types';
+
 import LeftQuote from '../../images/LeftQuote';
 import LeftArrow from '../../images/LeftArrow';
 import RightArrow from '../../images/RightArrow';
@@ -21,27 +21,30 @@ const QuoteCarousel = () => {
   return (
     <div sx={{
       position: 'relative',
-      px: 100,
+      px: [30, 100],
       mt: 40,
     }}
     >
-      <LeftQuote sx={{ position: 'absolute', left: 40, top: -20 }} />
+      <LeftQuote sx={{
+        position: 'absolute', left: [0, 40], height: [24, 39], width: [31, 46], top: -20,
+      }}
+      />
+      <LeftQuote sx={{
+        position: 'absolute', right: [0, 40], height: [24, 39], width: [31, 46], bottom: 0, transform: 'rotate(180deg)',
+      }}
+      />
       <Styled.p sx={{ fontSize: 1 }}>{quotes[itemNumber].quote}</Styled.p>
-      <Styled.p sx={{ fontSize: 1, position: 'absolute', right: 100 }}>
+      <Styled.p sx={{ fontSize: 1, position: 'absolute', right: [30, 100] }}>
         -
         {' '}
         {quotes[itemNumber].author}
       </Styled.p>
-      <LeftQuote sx={{
-        position: 'absolute', right: 40, bottom: 0, transform: 'rotate(180deg)',
-      }}
-      />
 
       <LeftArrow
         sx={{
           position: 'absolute',
-          left: 0,
-          right: 40,
+          left: [30, 0],
+          right: ['unset', 40],
           margin: 'auto',
           cursor: 'pointer',
 
@@ -51,24 +54,15 @@ const QuoteCarousel = () => {
       <RightArrow
         sx={{
           position: 'absolute',
-          left: 40,
-          right: 0,
+          left: [60, 40],
+          right: ['unset', 0],
           margin: 'auto',
           cursor: 'pointer',
         }}
         onClick={(() => setItemNumber((itemNumber + 1) % quotes.length))}
       />
-
     </div>
   );
-};
-
-QuoteCarousel.defaultProps = {
-  children: null,
-};
-
-QuoteCarousel.propTypes = {
-  children: PropTypes.node,
 };
 
 export default QuoteCarousel;

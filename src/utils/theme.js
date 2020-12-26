@@ -1,11 +1,11 @@
 const theme = {
-  breakpoints: ['40em', '52em', '64em'],
+  breakpoints: ['768px', '1024px'],
   space: [0, 4, 8, 16, 32, 64, 128, 200, 256],
   fonts: {
     body: 'Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     heading: 'Poppins Medium, sans-serif',
   },
-  fontSizes: [14, 16, 20, 24, 40, 80],
+  fontSizes: [14, 16, 18, 20, 24, 40, 60, 80],
   fontWeights: {
     body: 400,
     semibold: 900,
@@ -43,19 +43,19 @@ const theme = {
     },
     h1: {
       variant: 'text.heading',
-      fontSize: 5,
+      fontSize: [6, 7],
       m: 0,
       mb: 2,
     },
     h2: {
       variant: 'text.heading',
-      fontSize: 4,
+      fontSize: 5,
       m: 0,
       mb: 2,
     },
     p: {
       variant: 'text.body',
-      fontSize: 2,
+      fontSize: [2, 3],
       m: 0,
       mb: 2,
     },
@@ -65,6 +65,7 @@ const theme = {
     },
   },
   maxWidth: 1200,
+  boxShadow: '0 3px 8px rgba(0,0,0,.24)',
 };
 
 export default theme;
