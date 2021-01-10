@@ -39,7 +39,10 @@ const Nav = () => {
         borderRadius: 0,
       }}
       >
-        <Logo sx={{ height: [40, 55], ml: 3 }} />
+        <Link to="/" styles={{ display: 'flex' }}>
+
+          <Logo sx={{ height: [40, 55], ml: 3 }} />
+        </Link>
         <div
           sx={{
             display: 'flex',
@@ -76,7 +79,7 @@ const Nav = () => {
             >
               <NavItem to="/">Home</NavItem>
               <NavItem to="/options">Our Options</NavItem>
-              <NavItem to="/about">Gallery</NavItem>
+              <NavItem to="/gallery">Gallery</NavItem>
               <NavItem to="/contact">Contact</NavItem>
             </ul>
             <Link to="/options">
@@ -93,7 +96,7 @@ const Nav = () => {
           }}
           >
             <NavItem to="/options">Our Options</NavItem>
-            <NavItem to="/about">Gallery</NavItem>
+            <NavItem to="/gallery">Gallery</NavItem>
             <NavItem to="/contact">Contact</NavItem>
           </ul>
           <Link
