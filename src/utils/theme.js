@@ -1,5 +1,5 @@
 const theme = {
-  breakpoints: ['768px', '1024px'],
+  breakpoints: ['768px', '1024px', '1200px'],
   space: [0, 4, 8, 16, 32, 64, 128, 200, 256],
   fonts: {
     body: 'Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
@@ -19,9 +19,11 @@ const theme = {
   },
   colors: {
     text: '#222',
+    textLight: '#FBFFFE',
     background: '#FBFFFE',
     primary: '#FC6449',
     secondary: '#DE7C5A',
+    primaryLight: '#B44834',
     muted: '#F3F3F3',
     highlighted: '#F5F5F5',
     gray: '#D0D0D0',
@@ -66,6 +68,7 @@ const theme = {
   },
   maxWidth: 1200,
   boxShadow: '0 3px 8px rgba(0,0,0,.24)',
+  boxShadowHover: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
 };
 
 export default theme;

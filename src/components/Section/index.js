@@ -4,17 +4,17 @@ import { jsx } from 'theme-ui';
 import PropTypes from 'prop-types';
 
 const Section = ({ children, spacing, bgColor }) => (
-  <div sx={{
+  <section sx={{
     display: 'flex', justifyContent: 'center', backgroundColor: bgColor,
   }}
   >
     <div sx={{
-      width: '100%', px: [2, 3], py: spacing, maxWidth: (theme) => theme.maxWidth, position: 'relative',
+      width: '100%', px: [3], py: spacing, maxWidth: (theme) => theme.maxWidth, position: 'relative',
     }}
     >
       {children}
     </div>
-  </div>
+  </section>
 );
 
 Section.defaultProps = {

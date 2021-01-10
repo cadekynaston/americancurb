@@ -7,6 +7,9 @@ const Button = ({ children, outline }) => (
   <button
     type="button"
     sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
       border: outline ? '1px solid' : 0,
       borderColor: 'primary',
       py: 3,
@@ -19,6 +22,11 @@ const Button = ({ children, outline }) => (
       fontWeight: 700,
       cursor: 'pointer',
       boxShadow: (theme) => theme.boxShadow,
+      transition: 'all 0.1s ease-in-out',
+      ':hover': {
+        backgroundColor: outline ? 'primary' : 'primaryLight',
+        color: outline && 'background',
+      },
     }}
   >
     {children}

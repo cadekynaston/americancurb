@@ -10,7 +10,7 @@ const Separator = ({
   <div sx={{
     height: h,
     maxWidth: w,
-    width: '100%',
+    width: '80%',
     backgroundColor: bgColor,
     ...styles,
   }}

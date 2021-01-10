@@ -9,6 +9,7 @@ import Separator from '../src/components/Separator';
 import QuoteCarousel from '../src/components/QuoteCarousel';
 import Button from '../src/components/Button';
 import Link from '../src/components/Link';
+import PhoneIcon from '../src/images/Phone';
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Section spacing={0}>
         <div sx={{ position: 'relative' }}>
           <div sx={{
-            textAlign: ['left', 'right'], pt: 7, pb: 6, width: ['100%', '45%'],
+            textAlign: ['left', 'right', 'right'], pt: 7, pb: 6, width: ['100%', '60%', '45%'],
           }}
           >
             <Styled.h1>
@@ -32,12 +33,12 @@ export default function Home() {
               top: 0,
               right: -50,
               width: '60%',
-              display: ['none', 'block'],
+              display: ['none', 'none', 'block'],
             }}
           >
             <Image
               alt="Mountains"
-              src="/hero-image-trimmy.png"
+              src="/hero-blob.png"
               layout="responsive"
               height={751}
               width={740}
@@ -53,10 +54,10 @@ export default function Home() {
       <Section bgColor="muted">
 
         <div sx={{
-          pt: 7,
+          pt: [0, 2, 7],
           pb: 5,
           maxWidth: 800,
-          textAlign: 'center',
+          textAlign: ['center'],
           marginLeft: 'auto',
           marginRight: 'auto',
         }}
@@ -82,31 +83,50 @@ export default function Home() {
       <Section spacing={5}>
         <div
           sx={{
+            display: ['none', 'none', 'block'],
             position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '60%',
+            top: 50,
+            left: -3,
+            width: '52%',
           }}
         >
           <Image
             alt="Mountains"
-            src="/hero-image-trimmy.png"
+            src="/yard-blob.png"
             layout="responsive"
-            height={751}
-            width={740}
-            objectFit="cover"
-            objectPosition="center center"
+            height={881}
+            width={640}
             quality={70}
-            loading="eager"
           />
         </div>
-        <div sx={{ pl: ['0', '0', '55%'] }}>
-          <div sx={{ maxWidth: 420 }}>
+        <div sx={{ pl: ['0', '0', '55%'], mb: 3 }}>
+          <div sx={{
+            pt: 2,
+            pb: 4,
+            display: ['block', 'none'],
+            '> div': {
+              borderRadius: 0,
+            },
+          }}
+          >
+            <Image
+              alt="Mountains"
+              src="/curb-rock.jpg"
+              layout="responsive"
+              height={450}
+              width={600}
+              objectFit="cover"
+              objectPosition="center center"
+              quality={70}
+              loading="eager"
+            />
+          </div>
+          <div sx={{ maxWidth: [420, 550] }}>
             <Styled.h2 sx={{ mb: 4 }}>
               Take Your Yard to
-              <br />
-              the Next Level
               {' '}
+              <br sx={{ display: ['none', 'block'] }} />
+              the Next Level
             </Styled.h2>
             <Styled.p sx={{ fontFamily: 'heading', fontWeight: 700, mb: 2 }}>Durability</Styled.p>
             <Styled.p sx={{ mb: 3 }}>Concrete curbing is extremely durable and can last many years. You won’t need to worry about rust, warp, or rot.</Styled.p>
@@ -125,12 +145,20 @@ export default function Home() {
 
       <Section bgColor="muted">
         <div sx={{
-          textAlign: 'center', maxWidth: 600, marginLeft: 'auto', marginRight: 'auto',
+          textAlign: 'center',
+          maxWidth: 600,
+          marginLeft: 'auto',
+          marginRight: 'auto',
         }}
         >
           <Styled.h2>Get In Touch</Styled.h2>
           <Styled.p sx={{ mb: 4 }}>We would love to hear from you. Give us a call and we can schedule a time for us to check out your property and give you a free bid.</Styled.p>
-          <Button>801.678.7997</Button>
+          <Link to="tel:8014449944" styles={{ display: 'inline-block' }}>
+            <Button>
+              <PhoneIcon sx={{ mr: 2 }} />
+              801.444.9944
+            </Button>
+          </Link>
         </div>
       </Section>
     </Layout>

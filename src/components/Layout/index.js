@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 
 import Nav from '../Nav';
+import Footer from '../Footer';
 
 const Layout = ({ children, title }) => (
   <React.Fragment>
@@ -14,8 +15,11 @@ const Layout = ({ children, title }) => (
       <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Nav />
-    {children}
+    <div sx={{ position: 'relative' }}>
+      <Nav />
+      {children}
+      <Footer />
+    </div>
   </React.Fragment>
 );
 

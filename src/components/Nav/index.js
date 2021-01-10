@@ -25,12 +25,12 @@ const Nav = () => {
       top: 20,
       zIndex: 10,
       px: 10,
-      backgroundColor: 'background',
     }}
     >
       <div sx={{
         display: 'flex',
         width: '100%',
+        backgroundColor: 'background',
         px: [0],
         maxWidth: (theme) => theme.maxWidth,
         justifyContent: 'space-between',
