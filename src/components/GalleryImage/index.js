@@ -12,7 +12,7 @@ const GalleryImage = ({ src, loading }) => (
   }}
   >
     <Image
-      alt="Mountains"
+      alt="Landscape Curbing"
       src={src}
       layout="responsive"
       height={450}
@@ -22,6 +22,7 @@ const GalleryImage = ({ src, loading }) => (
       quality={70}
       loading={loading}
       sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 767px) 767px, (max-width: 850px) 262px, (min-width: 851px) 380px, 380px"
+      // sizes="(max-width: 767px) 100vw, 33vw"
     />
   </div>
 

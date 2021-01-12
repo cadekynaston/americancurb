@@ -37,7 +37,7 @@ export default function Home() {
             }}
           >
             <Image
-              alt="Mountains"
+              alt="American Curb Landscaping"
               src="/hero-blob.png"
               layout="responsive"
               height={751}
@@ -91,12 +91,13 @@ export default function Home() {
           }}
         >
           <Image
-            alt="Mountains"
+            alt="Curved landscape curbing"
             src="/yard-blob.png"
             layout="responsive"
             height={881}
             width={640}
             quality={70}
+            sizes="640px"
           />
         </div>
         <div sx={{ pl: ['0', '0', '55%'], mb: 3 }}>
@@ -110,7 +111,7 @@ export default function Home() {
           }}
           >
             <Image
-              alt="Mountains"
+              alt="Curved landscape curbing"
               src="/curb-rock.jpg"
               layout="responsive"
               height={450}
@@ -118,7 +119,6 @@ export default function Home() {
               objectFit="cover"
               objectPosition="center center"
               quality={70}
-              loading="eager"
             />
           </div>
           <div sx={{ maxWidth: [420, 550] }}>

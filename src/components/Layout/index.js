@@ -14,6 +14,7 @@ const Layout = ({ children, title }) => (
     <Head>
       <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />
+      <meta name="description" content="At American Curb we are landscape curbing pros that have been serving Utah for over 25 years." />
     </Head>
     <div sx={{ position: 'relative' }}>
       <Nav />
@@ -24,7 +25,7 @@ const Layout = ({ children, title }) => (
 );
 
 Layout.defaultProps = {
-  title: 'American Curb',
+  title: 'American Curb - Landscape Curbing Professionals | Utah',
 };
 
 Layout.propTypes = {
