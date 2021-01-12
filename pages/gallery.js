@@ -9,7 +9,7 @@ import Link from '../src/components/Link';
 import PhoneIcon from '../src/images/Phone';
 import GalleryImage from '../src/components/GalleryImage';
 
-export default function Home() {
+export default function Gallery() {
   return (
     <Layout>
       <Section spacing={3}>
