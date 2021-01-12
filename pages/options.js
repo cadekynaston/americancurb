@@ -14,7 +14,10 @@ export default function Options() {
     <Layout>
       <Section spacing={3}>
         <div sx={{ pt: 7 }}>
-          <Styled.h1 sx={{ textAlign: 'center' }}>GALLERY</Styled.h1>
+          <Styled.h1 sx={{ textAlign: 'center' }}>OUR OPTIONS</Styled.h1>
+          <div sx={{ maxWidth: 500, textAlign: 'center', margin: 'auto' }}>
+            <Styled.p>We’ve got the selection of styles to fit your needs. If you aren’t sure what to choose we can help you make the best decision to fit your situation.</Styled.p>
+          </div>
         </div>
       </Section>
       <Section>
@@ -44,8 +47,8 @@ export default function Options() {
           marginRight: 'auto',
         }}
         >
-          <Styled.h2>Like What You See?</Styled.h2>
-          <Styled.p sx={{ mb: 4 }}>We’d love to make your yard look beautiful too! Give us a call and schedule a time for us to come and give you a free bid.</Styled.p>
+          <Styled.h2>Installation</Styled.h2>
+          <Styled.p sx={{ mb: 4 }}>Bare ground is always easier for installation, but if you have grass we can cut it out. Depending on the size of the job we can typically be finished with the job in one day. Give us a call and we will come by and give you a free bid!</Styled.p>
           <Link to="tel:8014449944" styles={{ display: 'inline-block' }}>
             <Button>
               <PhoneIcon sx={{ mr: 2 }} />
