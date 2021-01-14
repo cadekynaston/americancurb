@@ -24,7 +24,7 @@ export default function Gallery() {
           gridGap: 3,
         }}
         >
-          <GalleryImage src="/gallery-images/gallery-1.jpg" loading="eager" />
+          <GalleryImage src="/gallery-images/gallery-1.jpg" priority />
           <GalleryImage src="/gallery-images/gallery-2.jpg" />
           <GalleryImage src="/gallery-images/gallery-3.jpg" />
           <GalleryImage src="/gallery-images/gallery-4.jpg" />
