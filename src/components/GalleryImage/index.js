@@ -14,7 +14,7 @@ const GalleryImage = ({ src, priority }) => (
     <Image
       alt="Landscape Curbing"
       src={src}
-      layout="responsive"
+      layout="intrinsic"
       height={450}
       width={450}
       objectFit="cover"
@@ -22,7 +22,6 @@ const GalleryImage = ({ src, priority }) => (
       quality={70}
       priority={priority}
       sizes="(max-width: 767px) 100vw, (max-width: 850px) 262px, (min-width: 851px) 380px, 380px"
-      // sizes="(max-width: 767px) 100vw, 33vw"
     />
   </div>
 

@@ -39,13 +39,10 @@ export default function Home() {
             <Image
               alt="American Curb Landscaping"
               src="/hero-blob.png"
-              layout="responsive"
               height={751}
               width={740}
-              objectFit="cover"
-              objectPosition="center center"
               quality={70}
-              loading="eager"
+              priority
             />
           </div>
         </div>
@@ -93,11 +90,9 @@ export default function Home() {
           <Image
             alt="Curved landscape curbing"
             src="/yard-blob.png"
-            layout="responsive"
             height={881}
             width={640}
             quality={70}
-            sizes="640px"
           />
         </div>
         <div sx={{ pl: ['0', '0', '55%'], mb: 3 }}>

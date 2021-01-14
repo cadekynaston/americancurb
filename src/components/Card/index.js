@@ -12,6 +12,7 @@ const Card = ({ featured, title, text }) => (
     textAlign: 'center',
     border: ({ colors }) => featured && `1px solid ${colors.primary}`,
     position: 'relative',
+    mt: featured && [3, 0],
   }}
   >
     {featured && (

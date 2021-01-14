@@ -13,7 +13,7 @@ import Pantone from '../src/components/Pantone';
 
 export default function Options() {
   return (
-    <Layout>
+    <Layout title="American Curb - Options" description="American Curb landscape curbing offers a wide assortment of colors and styles. Call us for a free quote today 801-444-9944.">
       <Section spacing={3}>
         <div sx={{ pt: 7 }}>
           <Styled.h1 sx={{ textAlign: 'center' }}>OUR OPTIONS</Styled.h1>
@@ -53,7 +53,7 @@ export default function Options() {
           <OptionHeading title="Colors" text="A dye can make your curbs pop" />
           <div
             sx={{
-              display: 'grid', gridTemplateColumns: ['1fr 1fr', '1fr 1fr 1fr', 'repeat(4, 1fr)'], gridGap: 30, width: '100%',
+              display: 'grid', gridTemplateColumns: ['1fr 1fr', '1fr 1fr 1fr', 'repeat(4, 1fr)'], gridGap: [20, 30], width: '100%',
             }}
           >
             <Pantone title="Bayou" color="#847B63" />

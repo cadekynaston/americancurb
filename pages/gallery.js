@@ -11,7 +11,7 @@ import GalleryImage from '../src/components/GalleryImage';
 
 export default function Gallery() {
   return (
-    <Layout>
+    <Layout title="American Curb - Gallery" description="American Curb landscape curbing image gallery. Landscape curbing professionals serving Utah for over 25 years.">
       <Section spacing={3}>
         <div sx={{ pt: 7 }}>
           <Styled.h1 sx={{ textAlign: 'center' }}>GALLERY</Styled.h1>
