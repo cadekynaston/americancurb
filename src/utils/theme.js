@@ -27,6 +27,7 @@ const theme = {
     muted: '#F3F3F3',
     highlighted: '#F5F5F5',
     gray: '#D0D0D0',
+    lightGray: 'rgba(34,34,34,.75)',
     opaque: 'rgba(0,0,0,.25)',
   },
   text: {
@@ -47,13 +48,13 @@ const theme = {
       variant: 'text.heading',
       fontSize: [6, 7],
       m: 0,
-      mb: 2,
+      mb: 1,
     },
     h2: {
       variant: 'text.heading',
       fontSize: 5,
       m: 0,
-      mb: 2,
+      mb: 1,
     },
     p: {
       variant: 'text.body',

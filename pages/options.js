@@ -7,7 +7,9 @@ import Layout from '../src/components/Layout';
 import Button from '../src/components/Button';
 import Link from '../src/components/Link';
 import PhoneIcon from '../src/images/Phone';
-import GalleryImage from '../src/components/GalleryImage';
+import Card from '../src/components/Card';
+import OptionHeading from '../src/components/OptionHeading';
+import Pantone from '../src/components/Pantone';
 
 export default function Options() {
   return (
@@ -21,20 +23,49 @@ export default function Options() {
         </div>
       </Section>
       <Section>
-        <div sx={{
-          display: 'grid',
-          gridTemplateColumns: ['100%', '1fr 1fr 1fr'],
-          gridGap: 3,
-        }}
-        >
-          <GalleryImage src="/gallery-images/gallery-1.jpg" loading="eager" />
-          <GalleryImage src="/gallery-images/gallery-2.jpg" />
-          <GalleryImage src="/gallery-images/gallery-3.jpg" />
-          <GalleryImage src="/gallery-images/gallery-4.jpg" />
-          <GalleryImage src="/gallery-images/gallery-5.jpg" />
-          <GalleryImage src="/gallery-images/gallery-6.jpg" />
-          <GalleryImage src="/gallery-images/gallery-7.jpg" />
 
+        <div sx={{ display: 'flex', flexDirection: ['column', 'row'] }}>
+          <OptionHeading title="Curb Styles" text="Lorem Lipsum" />
+          <div
+            sx={{
+              display: 'grid', gridTemplateColumns: ['1fr', '1fr 1fr', '1fr 1fr 1fr'], gridGap: 35, width: '100%',
+            }}
+          >
+            <Card title="Slant" text="Goes great with a stamp" />
+            <Card title="Square" text="Our most popular choice" featured featureText="Most Popular" />
+            <Card title="Mower" text="A classic shape" />
+          </div>
+        </div>
+
+        <div sx={{ display: 'flex', flexDirection: ['column', 'row'], mt: 5 }}>
+          <OptionHeading title="Stamps" text="Stamps are a great way to add some unique texture to your yard." />
+          <div
+            sx={{
+              display: 'grid', gridTemplateColumns: ['1fr', '1fr 1fr', '1fr 1fr'], gridGap: 35, width: '100%',
+            }}
+          >
+            <Card title="Cobblestone" text="Goes great with a stamp" />
+            <Card title="Random Brick" text="Our most popular choice" />
+          </div>
+        </div>
+
+        <div sx={{ display: 'flex', flexDirection: ['column', 'row'], mt: 5 }}>
+          <OptionHeading title="Colors" text="A dye can make your curbs pop" />
+          <div
+            sx={{
+              display: 'grid', gridTemplateColumns: ['1fr 1fr', '1fr 1fr 1fr', 'repeat(4, 1fr)'], gridGap: 30, width: '100%',
+            }}
+          >
+            <Pantone title="Bayou" color="#847B63" />
+            <Pantone title="Mesa Bluff" color="#9C844A" />
+            <Pantone title="Sunset Rose" color="#9C735A" />
+            <Pantone title="Cobblestone" color="#5A5A52" />
+            <Pantone title="Sangria" color="#9C735A" />
+            <Pantone title="Cocoa" color="#7A6953" />
+            <Pantone title="Pebble" color="#9C8C73" />
+            <Pantone title="Brick Red" color="#8C5239" />
+
+          </div>
         </div>
 
       </Section>
