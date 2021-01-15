@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section bgColor="muted">
+      <Section bgColor="primary">
 
         <div sx={{
           pt: [0, 2, 7],
