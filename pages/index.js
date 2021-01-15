@@ -21,7 +21,7 @@ export default function Home() {
           }}
           >
             <Styled.h1>
-              AMERICAN
+              AMERICANS
               <br />
               CURB
             </Styled.h1>
