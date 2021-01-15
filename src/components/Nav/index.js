@@ -118,6 +118,9 @@ const Nav = () => {
                 fontFamily: 'heading',
                 fontWeight: 700,
                 cursor: 'pointer',
+                ':hover': {
+                  backgroundColor: 'primaryDark',
+                },
               }}
             >
               <PhoneIcon sx={{ display: ['block', 'none'], height: 27, width: 22 }} />

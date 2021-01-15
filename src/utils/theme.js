@@ -23,7 +23,7 @@ const theme = {
     background: '#FBFFFE',
     primary: '#FC6449',
     secondary: '#DE7C5A',
-    primaryLight: '#B44834',
+    primaryDark: '#B44834',
     muted: '#F3F3F3',
     highlighted: '#F5F5F5',
     gray: '#D0D0D0',

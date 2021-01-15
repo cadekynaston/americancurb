@@ -24,7 +24,7 @@ const Button = ({ children, outline }) => (
       boxShadow: (theme) => theme.boxShadow,
       transition: 'all 0.1s ease-in-out',
       ':hover': {
-        backgroundColor: outline ? 'primary' : 'primaryLight',
+        backgroundColor: outline ? 'primary' : 'primaryDark',
         color: outline && 'background',
       },
     }}
