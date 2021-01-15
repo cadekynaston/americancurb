@@ -23,7 +23,7 @@ export default function Home() {
             <Styled.h1>
               AMERICAN
               <br />
-              CURB
+              BOYS
             </Styled.h1>
             <Styled.p sx={{ letterSpacing: 3, color: 'rgba(34,34,34, .75)' }}>Landscape Curbing Professionals</Styled.p>
           </div>
