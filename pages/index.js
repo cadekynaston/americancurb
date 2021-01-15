@@ -17,13 +17,13 @@ export default function Home() {
       <Section spacing={0}>
         <div sx={{ position: 'relative' }}>
           <div sx={{
-            textAlign: ['left', 'right', 'right'], pt: 7, pb: 6, width: ['100%', '60%', '45%'],
+            textAlign: ['left', 'right', 'right'], pt: 7, pb: 6, width: ['100%', '60%', '35%'],
           }}
           >
             <Styled.h1>
               AMERICAN
               <br />
-              BOYS
+              CURB
             </Styled.h1>
             <Styled.p sx={{ letterSpacing: 3, color: 'rgba(34,34,34, .75)' }}>Landscape Curbing Professionals</Styled.p>
           </div>
