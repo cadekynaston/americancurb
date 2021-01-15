@@ -42,6 +42,7 @@ export default function Home() {
               height={751}
               width={740}
               quality={70}
+              layout="responsive"
               priority
             />
           </div>
