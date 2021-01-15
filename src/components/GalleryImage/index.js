@@ -14,14 +14,15 @@ const GalleryImage = ({ src, priority }) => (
     <Image
       alt="Landscape Curbing"
       src={src}
-      layout="intrinsic"
-      height={450}
-      width={450}
+      layout="responsive"
+      height={600}
+      width={500}
       objectFit="cover"
       objectPosition="center center"
       quality={70}
       priority={priority}
       sizes="(max-width: 767px) 100vw, (max-width: 850px) 262px, (min-width: 851px) 380px, 380px"
+      // sizes="(max-width: 767px) 100vw, 33vw"
     />
   </div>
 
