@@ -17,7 +17,7 @@ export default function Home() {
       <Section spacing={0}>
         <div sx={{ position: 'relative' }}>
           <div sx={{
-            textAlign: ['left', 'right', 'right'], pt: 7, pb: 6, width: ['100%', '60%', '45%'],
+            textAlign: ['left', 'right', 'right'], pt: 7, pb: 6, width: ['100%', '60%', '35%'],
           }}
           >
             <Styled.h1>
