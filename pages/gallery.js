@@ -20,7 +20,7 @@ export default function Gallery() {
       <Section>
         <div sx={{
           display: 'grid',
-          gridTemplateColumns: ['100%', '1fr 1fr 1fr'],
+          gridTemplateColumns: ['100%', '1fr 1fr'],
           gridGap: 3,
         }}
         >
