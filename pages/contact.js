@@ -25,7 +25,7 @@ export default function Contact() {
 
           <div sx={{ pl: [null, 4], width: ['100%', '50%'], mb: [4, null] }}>
             <Styled.p sx={{ mb: 3 }}>We would love to work with you. Give us a call and we will schedule a time to come and give you a free bid. If we aren’t available, leave us a message and we will get back to you quickly.</Styled.p>
-            <Styled.p sx={{ mb: 3 }}>We generally serve Weber and Davis counties, but it depends on the job that you want done.</Styled.p>
+            <Styled.p sx={{ mb: 3 }}>We generally serve Weber and Davis counties, but it depends on the job that you want done. Get in touch with us and we&apos;d be happy to answer any other questions you might have.</Styled.p>
             <Styled.p sx={{ mb: 4 }}>Thank you for your support!</Styled.p>
             <Link to="tel:8014449944" styles={{ display: 'inline-block' }}>
               <Button>

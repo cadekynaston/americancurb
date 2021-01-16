@@ -17,7 +17,7 @@ const OptionHeading = ({ title, text }) => (
         borderRight: [0, '1px solid #C4C4C4'],
       }}
     >
-      <Styled.p sx={{ fontFamily: 'heading', fontWeight: 700 }}>{title}</Styled.p>
+      <Styled.p>{title}</Styled.p>
       <Styled.p sx={{ fontSize: [0, 0], color: 'lightGray' }}>{text}</Styled.p>
     </div>
   </div>

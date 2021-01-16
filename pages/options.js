@@ -17,15 +17,15 @@ export default function Options() {
       <Section spacing={3}>
         <div sx={{ pt: 7 }}>
           <Styled.h1 sx={{ textAlign: 'center' }}>OUR OPTIONS</Styled.h1>
-          <div sx={{ maxWidth: 500, textAlign: 'center', margin: 'auto' }}>
-            <Styled.p>We’ve got the selection of styles to fit your needs. If you aren’t sure what to choose we can help you make the best decision to fit your situation.</Styled.p>
+          <div sx={{ maxWidth: 650, textAlign: 'center', margin: 'auto' }}>
+            <Styled.p>We’ve got the selection of styles to fit your needs. If you aren’t sure what to choose we can help you make the decisions that will make your yard look great for years to come.</Styled.p>
           </div>
         </div>
       </Section>
       <Section>
 
         <div sx={{ display: 'flex', flexDirection: ['column', 'row'] }}>
-          <OptionHeading title="Curb Styles" text="Lorem Lipsum" />
+          <OptionHeading title="Curb Styles" text="We can help you make the best choice for your situation" />
           <div
             sx={{
               display: 'grid', gridTemplateColumns: ['1fr', '1fr 1fr', '1fr 1fr 1fr'], gridGap: 35, width: '100%',
@@ -38,14 +38,14 @@ export default function Options() {
         </div>
 
         <div sx={{ display: 'flex', flexDirection: ['column', 'row'], mt: 5 }}>
-          <OptionHeading title="Stamps" text="Stamps are a great way to add some unique texture to your yard." />
+          <OptionHeading title="Stamps" text="Stamps are a great way to add some unique texture to your yard" />
           <div
             sx={{
               display: 'grid', gridTemplateColumns: ['1fr', '1fr 1fr', '1fr 1fr'], gridGap: 35, width: '100%',
             }}
           >
-            <Card title="Cobblestone" text="Goes great with a stamp" />
-            <Card title="Random Brick" text="Our most popular choice" />
+            <Card title="Cobblestone" />
+            <Card title="Random Brick" />
           </div>
         </div>
 
