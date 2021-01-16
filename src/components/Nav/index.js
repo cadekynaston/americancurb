@@ -95,6 +95,7 @@ const Nav = () => {
             pl: 0,
           }}
           >
+            <NavItem to="/">Home</NavItem>
             <NavItem to="/options">Our Options</NavItem>
             <NavItem to="/gallery">Gallery</NavItem>
             <NavItem to="/contact">Contact</NavItem>
