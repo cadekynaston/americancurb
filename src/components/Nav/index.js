@@ -39,8 +39,11 @@ const Nav = () => {
         borderRadius: 0,
       }}
       >
-        <Link to="/" styles={{ display: 'flex' }}>
-
+        <Link
+          to="/"
+          styles={{ display: 'flex' }}
+          aria-label="Home"
+        >
           <Logo sx={{ height: [40, 55], ml: 3 }} />
         </Link>
         <div
