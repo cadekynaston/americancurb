@@ -10,17 +10,17 @@ const NavItem = ({ children, to }) => (
     mr: [0, 4], mt: [4, 0], fontSize: [3, 1],
   }}
   >
-    <Link to={to}>
-      <a sx={{
+    <Link
+      to={to}
+      styles={{
         textDecoration: 'none',
         color: 'text',
         ':hover': {
           color: 'primary',
         },
       }}
-      >
-        {children}
-      </a>
+    >
+      {children}
     </Link>
   </li>
 );

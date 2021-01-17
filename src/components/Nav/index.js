@@ -62,6 +62,7 @@ const Nav = () => {
               border: 0,
               backgroundColor: 'background',
             }}
+            aria-label="Menu"
           >
             <MenuIcon sx={{ mt: 1 }} />
           </button>
@@ -123,6 +124,7 @@ const Nav = () => {
                   backgroundColor: 'primaryDark',
                 },
               }}
+              aria-label="Call Now"
             >
               <PhoneIcon sx={{ display: ['block', 'none'], height: 27, width: 22 }} />
               <span sx={{ display: ['none', 'block'] }}>801.444.9944</span>

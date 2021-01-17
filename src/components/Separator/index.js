@@ -26,8 +26,8 @@ Separator.defaultProps = {
 
 Separator.propTypes = {
   bgColor: PropTypes.string,
-  h: PropTypes.oneOfType(PropTypes.string, PropTypes.number),
-  w: PropTypes.oneOfType(PropTypes.string, PropTypes.number),
+  h: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  w: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   // eslint-disable-next-line react/forbid-prop-types
   styles: PropTypes.object,
 };
