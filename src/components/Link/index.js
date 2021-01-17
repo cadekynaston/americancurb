@@ -5,14 +5,19 @@ import { jsx } from 'theme-ui';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
-const CustomLink = ({ children, to, styles }) => (
+const CustomLink = ({
+  children, to, styles, ...props
+}) => (
   <Link passHref href={to}>
-    <a sx={{
-      textDecoration: 'none',
-      color: 'text',
-      cursor: 'pointer',
-      ...styles,
-    }}
+    <a
+      sx={{
+        textDecoration: 'none',
+        color: 'text',
+        cursor: 'pointer',
+        ...styles,
+      }}
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...props}
     >
       {children}
     </a>
