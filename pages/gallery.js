@@ -20,20 +20,29 @@ export default function Gallery() {
       <Section>
         <div sx={{
           display: 'grid',
-          gridTemplateColumns: ['100%', '1fr 1fr 1fr'],
+          gridTemplateColumns: ['100%', '1fr 1fr'],
           gridGap: 3,
         }}
         >
-          <GalleryImage src="/gallery-images/gallery-1.jpg" />
-          <GalleryImage src="/gallery-images/gallery-2.jpg" />
-          <GalleryImage src="/gallery-images/gallery-3.jpg" />
-          <GalleryImage src="/gallery-images/gallery-4.jpg" />
-          <GalleryImage src="/gallery-images/gallery-5.jpg" />
-          <GalleryImage src="/gallery-images/gallery-6.jpg" />
-          <GalleryImage src="/gallery-images/gallery-7.jpg" />
-
+          <div>
+            <GalleryImage src="/gallery-images/gallery-3.jpg" landscape />
+            <GalleryImage src="/gallery-images/gallery-6.jpg" />
+            <GalleryImage src="/gallery-images/gallery-2.jpg" landscape />
+            <GalleryImage src="/gallery-images/gallery-8.jpg" />
+            <GalleryImage src="/gallery-images/gallery-5.jpg" landscape />
+            <GalleryImage src="/gallery-images/gallery-7.jpg" landscape />
+            <GalleryImage src="/gallery-images/gallery-11.jpg" />
+          </div>
+          <div>
+            <GalleryImage src="/gallery-images/gallery-1.jpg" />
+            <GalleryImage src="/gallery-images/gallery-4.jpg" landscape />
+            <GalleryImage src="/gallery-images/gallery-9.jpg" />
+            <GalleryImage src="/gallery-images/gallery-10.jpg" landscape />
+            <GalleryImage src="/gallery-images/gallery-13.jpg" />
+            <GalleryImage src="/gallery-images/gallery-12.jpg" landscape />
+            <GalleryImage src="/gallery-images/gallery-14.jpg" />
+          </div>
         </div>
-
       </Section>
 
       <Section bgColor="muted">

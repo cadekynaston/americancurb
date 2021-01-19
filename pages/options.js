@@ -1,6 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { Styled, jsx } from 'theme-ui';
+import Image from 'next/image';
 
 import Section from '../src/components/Section';
 import Layout from '../src/components/Layout';
@@ -31,9 +32,56 @@ export default function Options() {
               display: 'grid', gridTemplateColumns: ['1fr', '1fr 1fr', '1fr 1fr 1fr'], gridGap: 35, width: '100%',
             }}
           >
-            <Card title="Slant" text="Goes great with a stamp" />
-            <Card title="Square" text="Our most popular choice" featured featureText="Most Popular" />
-            <Card title="Mower" text="A classic shape" />
+            <Card
+              title="Slant"
+              text="Goes great with a stamp"
+              image={(
+                <Image
+                  alt="Landscape Curbing"
+                  src="/slant.png"
+                  layout="fixed"
+                  height={110}
+                  width={120}
+                  objectFit="cover"
+                  objectPosition="center center"
+                  quality={50}
+                />
+              )}
+            />
+            <Card
+              title="Square"
+              text="Our most popular choice"
+              featured
+              featureText="Most Popular"
+              image={(
+                <Image
+                  alt="Landscape Curbing"
+                  src="/square.png"
+                  layout="fixed"
+                  height={100}
+                  width={110}
+                  objectFit="cover"
+                  objectPosition="center center"
+                  quality={50}
+                />
+              )}
+            />
+            <Card
+              title="Mower"
+              text="A classic shape"
+              image={(
+                <Image
+                  alt="Landscape Curbing"
+                  src="/mower.png"
+                  layout="fixed"
+                  height={110}
+                  width={120}
+                  objectFit="cover"
+                  objectPosition="center center"
+                  quality={50}
+                />
+              )}
+            />
           </div>
         </div>
 

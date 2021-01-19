@@ -2,9 +2,10 @@
 /** @jsx jsx */
 import { Styled, jsx } from 'theme-ui';
 import PropTypes from 'prop-types';
-import Image from 'next/image';
 
-const Card = ({ featured, title, text }) => (
+const Card = ({
+  featured, title, text, image,
+}) => (
   <div sx={{
     borderRadius: 0,
     boxShadow: ({ boxShadow }) => boxShadow,
@@ -41,16 +42,7 @@ const Card = ({ featured, title, text }) => (
       </Styled.p>
     </div>
     ) }
-    <Image
-      alt="Landscape Curbing"
-      src="/slant.png"
-      layout="fixed"
-      height={120}
-      width={130}
-      objectFit="cover"
-      objectPosition="center center"
-      quality={80}
-    />
+    {image}
     <Styled.p sx={{
       fontFamily: 'heading',
       fontWeight: 700,
@@ -81,12 +73,14 @@ const Card = ({ featured, title, text }) => (
 Card.defaultProps = {
   featured: false,
   text: null,
+  image: null,
 };
 
 Card.propTypes = {
   featured: PropTypes.bool,
   title: PropTypes.string.isRequired,
   text: PropTypes.string,
+  image: PropTypes.node,
 };
 
 export default Card;
