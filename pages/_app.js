@@ -11,7 +11,7 @@ import '../node_modules/normalize.css/normalize.css';
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
     TagManager.initialize({
-      gtmId: 'G-HZ5LJV12BL',
+      gtmId: 'UA-137604730-7',
     });
   }, []);
 
