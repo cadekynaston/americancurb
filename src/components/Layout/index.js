@@ -14,7 +14,7 @@ const Layout = ({ children, title, description }) => (
     <Head>
       <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />
-      <meta name="description" content={`"${description}"`} />
+      <meta name="description" content={`${description}`} />
       <meta property="og:title" content="American Curb - Landscape Curbing Professionals" />
       <meta property="og:description" content="Serving Utah for over 25 years." />
       <meta property="og:url" content="https://www.americancurb.co" />
