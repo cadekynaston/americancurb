@@ -44,7 +44,7 @@ export default function Options() {
                   width={120}
                   objectFit="cover"
                   objectPosition="center center"
-                  quality={50}
+                  quality={40}
                 />
               )}
             />
@@ -62,7 +62,7 @@ export default function Options() {
                   width={110}
                   objectFit="cover"
                   objectPosition="center center"
-                  quality={50}
+                  quality={40}
                 />
               )}
             />
@@ -78,7 +78,7 @@ export default function Options() {
                   width={120}
                   objectFit="cover"
                   objectPosition="center center"
-                  quality={50}
+                  quality={40}
                 />
               )}
             />

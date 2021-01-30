@@ -20,7 +20,7 @@ const GalleryImage = ({ src, priority, landscape }) => (
       width={500}
       objectFit="cover"
       objectPosition="center center"
-      quality={70}
+      quality={40}
       priority={priority}
       sizes="(max-width: 767px) 100vw, (max-width: 850px) 400px, (min-width: 851px) 576px, 576px"
       // sizes="(max-width: 767px) 100vw, 33vw"

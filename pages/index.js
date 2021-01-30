@@ -41,7 +41,7 @@ export default function Home() {
               src="/hero-blob.png"
               height={751}
               width={740}
-              quality={70}
+              quality={60}
               layout="responsive"
               priority
             />
@@ -93,7 +93,7 @@ export default function Home() {
             src="/yard-blob.png"
             height={881}
             width={640}
-            quality={70}
+            quality={40}
           />
         </div>
         <div sx={{ pl: ['0', '0', '55%'], mb: 3 }}>
@@ -114,7 +114,7 @@ export default function Home() {
               width={600}
               objectFit="cover"
               objectPosition="center center"
-              quality={70}
+              quality={30}
             />
           </div>
           <div sx={{ maxWidth: [420, 550] }}>
