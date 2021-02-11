@@ -21,6 +21,7 @@ const Layout = ({ children, title, description }) => (
       <meta property="og:locale" content="en_US" />
       <meta property="og:site_name" content="American Curb" />
       <meta property="og:type" content="website" />
+      <meta property="og:image" content="/site-screenshot.jpg" />
     </Head>
     <div sx={{ position: 'relative' }}>
       <Nav />
