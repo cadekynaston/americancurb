@@ -1,30 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# American Curb
+### Landscape Curbing Professionals
 
-## Getting Started
+This is a business landing page I created for a small business. This is the first site I have created using Next.js and I found it to be a very enjoyable experience for creating a high performing website relatively easily.
 
-First, run the development server:
+This is also the first site that I actually used Figma and designed the entire thing before writing any code and I can't recommend doing that enough. I know that is obvious that you should design things before you start coding, but I always had a hard time doing it and now I won't go back. [Check it out!](https://nextjs.org/)
 
+### Tech
+* [Next.js](https://nextjs.org/)
+* [Theme UI](https://theme-ui.com/)
+* [Vercel](https://vercel.com/)
+* [Figma](https://www.figma.com/)
+### Running Locally
 ```bash
-npm run dev
-# or
-yarn dev
+git clone git@github.com:cadekynaston/americancurb.git
+cd americancurb
+yarn && yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to use this code as a template for your own website. If you do use this project as a template please link back to me for credit. [https://cade.codes](https://cade.codes)
