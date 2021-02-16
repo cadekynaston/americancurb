@@ -127,11 +127,18 @@ export default function Home() {
             <Styled.p sx={{ fontFamily: 'heading', fontWeight: 700, mb: 2 }}>Durability</Styled.p>
             <Styled.p sx={{ mb: 3 }}>Concrete curbing is extremely durable and can last many years. You won’t need to worry about rust, warp, or rot.</Styled.p>
             <Styled.p sx={{ fontFamily: 'heading', fontWeight: 700, mb: 2 }}>Design</Styled.p>
-            <Styled.p sx={{ mb: 3 }}>With our options in curb styles, colors and stamps, your yard will look just the way you want it. See the gallery for inspiration. </Styled.p>
+            <Styled.p sx={{ mb: 3 }}>
+              With our options in curb styles, colors and stamps, your yard will look just the way you want it. See
+              {' '}
+              <Link to="/gallery" styles={{ color: 'primary' }}>the gallery</Link>
+              {' '}
+              for inspiration.
+              {' '}
+            </Styled.p>
             <Styled.p sx={{ fontFamily: 'heading', fontWeight: 700, mb: 2 }}>Functionality</Styled.p>
             <Styled.p sx={{ mb: 3 }}>Concrete curbing will keep your grass from growing into your flower beds as well as keep your top soil where it should be and prevent runoff.</Styled.p>
             <Styled.p sx={{ fontFamily: 'heading', fontWeight: 700, mb: 2 }}>Maintenance</Styled.p>
-            <Styled.p sx={{ mb: 3 }}>Curbing requires zero maintenance and can help you save time trimming your edges</Styled.p>
+            <Styled.p sx={{ mb: 3 }}>Curbing requires zero maintenance and can help you save time doing yard work.</Styled.p>
             <Link to="/options">
               <Button outline>See Our Options</Button>
             </Link>
