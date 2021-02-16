@@ -21,8 +21,8 @@ const Layout = ({ children, title, description }) => (
       <meta property="og:locale" content="en_US" />
       <meta property="og:site_name" content="American Curb" />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="/site-screenshot.jpg" />
-      <meta property="twitter:image" content="/site-screenshot.jpg" />
+      <meta property="og:image" content="https://www.americancurb.co/site-screenshot.jpg" />
+      <meta property="twitter:image" content="https://www.americancurb.co/site-screenshot.jpg" />
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://www.americancurb.co" />
       <meta property="twitter:image:alt" content="American Curb" />
