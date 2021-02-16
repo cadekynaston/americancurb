@@ -16,12 +16,14 @@ const Layout = ({ children, title, description }) => (
       <link rel="icon" href="/favicon.ico" />
       <meta name="description" content={`${description}`} />
       <meta property="og:title" content="American Curb - Landscape Curbing Professionals" />
-      <meta property="og:description" content="Serving Utah for over 25 years." />
+      <meta property="og:description" content="American Curb is Utah’s premier landscape curbing business serving Utah for over 25 years." />
       <meta property="og:url" content="https://www.americancurb.co" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:site_name" content="American Curb" />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="/site-screenshot.jpg" />
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:image" content="/site-screenshot.jpg" />
     </Head>
     <div sx={{ position: 'relative' }}>
       <Nav />
