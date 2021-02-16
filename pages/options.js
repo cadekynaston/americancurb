@@ -89,11 +89,41 @@ export default function Options() {
           <OptionHeading title="Stamps" text="Stamps are a great way to add some unique texture to your yard" />
           <div
             sx={{
-              display: 'grid', gridTemplateColumns: ['1fr', '1fr 1fr', '1fr 1fr'], gridGap: 35, width: '100%',
+              display: 'grid', gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], gridGap: 35, width: '100%',
             }}
           >
-            <Card title="Cobblestone" />
-            <Card title="Random Brick" />
+            <Card
+              title="Cobblestone"
+              image={(
+                <Image
+                  alt="Landscape Curbing"
+                  src="/cobblestone.jpg"
+                  layout="fixed"
+                  height={200}
+                  width={300}
+                  objectFit="cover"
+                  objectPosition="center center"
+                  quality={40}
+                  sx={{ borderRadius: 0 }}
+                />
+              )}
+            />
+            <Card
+              title="Random Brick"
+              image={(
+                <Image
+                  alt="Landscape Curbing"
+                  src="/brick.jpg"
+                  layout="fixed"
+                  height={200}
+                  width={300}
+                  objectFit="cover"
+                  objectPosition="center center"
+                  quality={40}
+                  sx={{ borderRadius: 0 }}
+                />
+              )}
+            />
           </div>
         </div>
 
